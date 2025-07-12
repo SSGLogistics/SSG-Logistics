@@ -1,0 +1,126 @@
+/* about.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('about-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.85);
+  color: #f6f4f4;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+
+.logo-block {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  z-index: 1000;
+}
+
+.logo-top {
+  padding-left:2rem ;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.logo-bottom {
+  font-size: 1vm;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-top: 0.3rem;
+}
+
+
+.menu-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+#navMenu {
+  position: absolute ;
+  display: flex;
+  gap: 30px;
+  top: 20px;
+  right: 30px;
+}
+
+#navMenu a {
+  padding-top: 2rem;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: medium;
+}
+
+#navMenu a:hover {
+  border-bottom: 2px solid #f4c20d;
+}
+
+.about-section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5rem 2rem;
+  min-height: 100vh;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #ffdd57;
+}
+
+.about-content h2 {
+  font-size: 1.8rem;
+  color: #f4c20d;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #f0f0f0;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}

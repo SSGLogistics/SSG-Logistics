@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSG Logistics</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+  <header>
+  <!--<div class="header-content">
+    <div class="logo-slogen">
+      <span class="logo"><span style="color: white;">SS</span><span style="color: yellow;">G</span></span>
+      <span class="slogen" style="color: white;">Logistics</span>
+    </div>-->
+    <div class="logo-block">
+  <div class="logo-top"><span style="color: white;">SS</span><span style="color: yellow;">G</span></div>
+  <div class="logo-bottom"><span style="color: white;">L&nbsp;O&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;S</span></div>
+</div>
+
+
+    <button class="menu-toggle" id="menuToggle"></button>
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="ssgservice.html">Services</a>
+    <a href="ssgabout.html">About</a>
+    <a href="ssgcontact.html">Contact</a>
+  </nav>
+</header>
+
+
+
+  <!-- Hero Section -->
+
+  <section class="hero"style="background-image: url('logistic theam.png.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;">
+  </section>
+
+  <div class="hero-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#fef6d2"></path>
+  </svg>
+</div>
+
+
+  
+
+
+
+<div class="bg-wrapper" 
+style="background: linear-gradient(to bottom, rgb(208, 169, 90)0%, rgba(255,255,255,0))100%, url('godown bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+">
+  <!-- Your content goes here -->
+
+
+
+  <!-- Info Strips -->
+  <section class="info-strips-horizontal">
+    <div class="strip white-bg">
+      <h3>💰 Best Prices</h3>
+      <p>Transparent rates with no hidden fees.</p>
+    </div>
+    <div class="strip gray-bg">
+      <h3>📩 Get Free Quote</h3>
+      <p>Quick estimates for your next shipment.</p>
+    </div>
+    <div class="strip yellow-bg">
+      <h3>📞 24/7 Support</h3>
+      <p>Always available to assist your logistics needs.</p>
+    </div>
+  </section>
+
+  <!-- Vision Paragraph -->
+ <div class="vision-block">
+  <p>
+    At <strong>SSG Logistics</strong>, we believe logistics is more than movement — it’s momentum. Every delivery we make is a reflection of our values: precision, punctuality, and personal care. Whether it’s a single parcel or a full truckload, we treat every shipment with the same level of dedication. Our team is trained not just to transport, but to troubleshoot, communicate, and ensure peace of mind. We operate with transparency — no hidden fees, no last-minute surprises. From startups to enterprises, we tailor our services to fit your scale and speed. Our fleet is expanding, our routes are growing, and our commitment is unwavering. We’re not just a logistics provider — we’re a logistics partner. With real-time updates and WhatsApp booking, we bring convenience to your fingertips. Because at SSG, your business doesn’t just move — it moves forward. Efficiently. Reliably. Nationwide. That’s the SSG promise.
+  </p>
+</div>
+
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">✅ Reliable</div>
+    <div class="feature">🌐 Pan India</div>
+    <div class="feature">⚡ On time Delivery</div>
+  </section>
+
+  <!-- Quote Form -->
+  <section id="quote">
+    <form id="quoteForm" class="quote-form">
+      <h2>Get a Quote</h2>
+
+      
+
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" required />
+
+      <label for="pickup">Pickup Location</label>
+      <input type="text" name="pickup" required/>
+      <label for="drop">Drop Location</label>
+      <input type="text" name="drop" required />
+
+      <label for="vehicle">Select Vehicle</label>
+      
+<select name="vehicle" required>
+  <option value="">Select vehicle</option>
+  <option value="swiftlite">SwiftLite 750</option>
+  <option value="flexhaul">FlexHaul 7000</option>
+  <option value="titanmover">TitanMover 9000</option>
+  <option value="heavyhaul">HeavyHaul 9000+</option>
+</select>
+
+
+      <label for="date">Date</label>
+      <input type="date" name="date" required />
+
+      <button type="button" onclick="sendToWhatsApp()">Get Quote</button>
+    </div>
+    </form>
+  </section>
+
+  <!--- Contact Section -->
+  <section id="contact-home">
+    <h1>CONTACT US</h1>
+    <div class="contact-buttons">
+  <a href="https://wa.me/919284244876" target="_blank" class="whatsapp-button">
+    WhatsApp
+  </a>
+  <a href="mailto:ssglogisticshub@gmail.com" class="email-button">
+    Email
+  </a>
+</div>
+
+  </section>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919284244876" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SSG Logistics</p>
+  </footer>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+  </div>
+  </div>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSG Logistics</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+
+ <header>
+  <div class="logo-slogen">
+    <div class="logo">
+      <span style="color: white;">SS</span><span style="color: yellow;">G</span>
+      <div class="slogen"><span style="color: white;">Logistics</span></div>
+    </div>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle">Menu</button>
+
+  <nav id="navMenu">
+    <a href="ssg.html">Home</a>
+    <a href="ssgservice.html">Services</a>
+    <a href="ssgabout.html">About</a>
+    <a href="ssgcontact.html">Contact</a>
+  </nav>
+</header>
+
+
+ <section class="hero" style="background-image: url('home bg.jpg');
+  background-size: cover; 
+ background-position: center;
+  height: 100vh;
+   color: white;">
+  </section>
+
+
+
+
+
+  <section class="info-strips-horizontal">
+  <div class="strip white-bg">
+    <h3>💰 Best Prices</h3>
+    <p>Transparent rates with no hidden fees.</p>
+  </div>
+  <div class="strip gray-bg">
+    <h3>📩 Get Free Quote</h3>
+    <p>Quick estimates for your next shipment.</p>
+  </div>
+  <div class="strip yellow-bg">
+    <h3>📞 24/7 Support</h3>
+    <p>Always available to assist your logistics needs.</p>
+  </div>
+</section>
+
+  <!--<div class="hero-text">
+    <h1>Reliable. Fast. Pan India.</h1>
+    <p>Your trusted logistics partner</p>
+  </div>-->
+<!---
+
+<div class="vision-expanded">
+ <div class="uproot" ><p>At SSG Logistics, we don’t just move goods — we move businesses forward, </p>
+</div>
+  <div class="uprox" ><p>dreams closer, and promises across every mile.With every shipment, we deliver more than cargo — we deliver confidence, care, and commitment.></p>
+  </div>
+    <div class="midroot"> <p>the narrow lanes of Goa to the farthest corners of India, our growing fleet is powered by trust and driven by purpose.</p>
+    </div>
+  <div class="downrox"><p> believe logistics should feel effortless — a single call, and your journey begins.></p>
+  </div>
+  <div class="downroot"><p>Because with SSG, every delivery is more than a service — it’s a relationship built on reliability, and a promise delivered with heart. 💛🚛></p>
+  </div>
+</div>
+
+
+  
+    <section class="features">
+    <div class="feature">✅ Reliable</div>
+    <div class="feature">🌐 Pan India</div>
+    <div class="feature">⚡ On time Delivery</div>
+  </section>
+ 
+
+
+ <!-- <section id="services">
+  <h2>Our Services</h2>
+  <p>At SSG Logistics, we offer end-to-end logistics solutions tailored to your needs — whether you're an individual, a startup, or a growing enterprise.
+<br><br>
+<b>✅ What We Offer:</b>
+<br>
+<ul>
+<li><b>B2B & B2C</b> Transportation
+Seamless movement of goods for businesses and direct-to-customer deliveries.</li>
+<li><b>Last-Mile Delivery</b> 
+Fast and safe deliveries from hubs to final destinations.</li>
+
+<li><b>Monthly Subscription Plans</b>
+Customized logistics packages for regular clients at discounted rates.</li>
+
+<li><b>Goa-Wide & Pan India Coverage</b>
+Efficient operations across Goa and to every corner of India.</li>
+
+<li><b>International Freight Handling</b>
+Support for select international cargo movements through trusted partners.</li>
+<br><br>
+<b>🚛 Our Fleet</b>
+
+<table>
+  <thead>
+    <tr>
+      <th>Vehicle Type</th>
+      <th>Load Capacity</th>
+      <th>Ideal For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mini Pickup</td>
+      <td>Up to 750 kg</td>
+      <td>Light goods, city deliveries</td>
+    </tr>
+    <tr>
+      <td>Bolero Pickup</td>
+      <td>Up to 1.5 tons</td>
+      <td>Retail supply, commercial cargo</td>
+    </tr>
+    <tr>
+      <td>Eicher Trucks</td>
+      <td>4–6 tons</td>
+      <td>Intercity goods, bulk delivery</td>
+    </tr>
+    <tr>
+      <td>Heavy Trucks</td>
+      <td>9+ tons</td>
+      <td>Large freight, industrial loads</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+-->
+
+
+<!--<section id="about">
+  <h2>About Us</h2>
+  <p> Reliable. Affordable. On-Time.
+At SSG Logistics, we are committed to transforming the way India moves goods. Based in North Goa, we specialize in last-mile delivery, business logistics, and intercity freight — helping small businesses and large companies move products with confidence.
+
+What started with a single 1.5-ton pickup is now on its way to becoming a trusted name in logistics — built on hard work, transparency, and client-first service.
+<br>
+<br>
+<b>🎯 Our Mission</b>
+> To simplify logistics for every business — big or small — through fair pricing, reliable service, and professional support.
+<br>
+<br>
+<b>👁️ Our Vision</b>
+> To become India’s most trusted, tech-enabled logistics network from Goa to PAN India, powered by a growing fleet and satisfied clients.
+<br>
+<br>
+<b>👤 Founder’s Note</b>
+Rohit, a young entrepreneur and student, launched SSG Logistics with one goal: to make logistics simple and client-focused. Even while pursuing his final year of engineering, he actively manages every trip and booking, ensuring each delivery is smooth and efficient.
+<br>
+<br>
+<b>🏆 Why Choose Us?</b><br>
+✅ Transparent Per-KM Rates<br>
+✅ Monthly Plans for Regular Clients<br>
+✅ Loading Included<br>
+✅ WhatsApp Booking<br>
+✅ Serving Goa to PAN India.</p>
+</section>
+<section id="quote">
+    <form id="quoteForm" class="quote-form">
+  <h2>Get a Quote</h2>
+
+  <label for="name">Name</label>
+  <input type="text" name="name" required />
+
+  <label for="phone">Phone</label>
+  <input type="tel" name="phone" required />
+
+  <label for="pickup">Pickup Location</label>
+  <input type="text" name="pickup" required />
+
+  <label for="drop">Drop Location</label>
+  <input type="text" name="drop" required />
+
+  <label for="vehicle">Select Vehicle</label>
+  <select name="vehicle" required>
+    <option value="">Select vehicle</option>
+    <option value="truck">Truck</option>
+    <option value="van">Van</option>
+  </select>
+
+  <label for="date">Date</label>
+  <input type="date" name="date" required />
+
+  <!--<button type="submit">Get Quote</button>
+  <p id="formMessage"></p>--><!--
+  <button type="button" onclick="sendToWhatsApp()">Get Quote</button>
+
+</form>
+</section> 
+
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email:ssglogisticshub@gmail.com</p>
+  <p>Phone: +91-9284244876</p>
+</a>
+
+</section>
+  
+
+  <!-- WhatsApp Floating Button --><!---
+<a href="https://wa.me/919284244876" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" 
+       alt="WhatsApp Chat" />
+</a>
+<script>
+  function navigateTo(page) {
+    window.location.href = page;
+  }
+</script>
+
+ <footer>
+    <p>&copy; 2025 SSG Logistics</p>
+  </footer>
+</body>
+</html> -->

@@ -1,0 +1,812 @@
+/* === Global Styles === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:Arial, sans-serif;
+  background: #4d4c4c;
+  color: #333;
+  line-height: 1.6;
+  background: none;
+}
+
+  /* .bg-wrapper {
+  background-image: url('godown bg.jpg');
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  } */
+
+section, .quote-form, .vision-block {
+  background-color: rgba(255, 255, 255, 0.9); /* Soft white overlay */
+  backdrop-filter: blur(2px); /* Optional blur for clarity */
+  padding-top: 2rem;
+  border-radius: 8px;
+}
+
+
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.header-content {
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-block {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  z-index: 1000;
+}
+
+.logo-top {
+  padding-left:2rem ;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.logo-bottom {
+  font-size: 1vm;
+  font-weight: 800;
+  color: white;
+  letter-spacing: 0.1rem;
+  margin-top: 0.3rem;
+}
+
+
+.menu-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+#navMenu {
+  position: absolute ;
+  display: flex;
+  gap: 30px;
+  top: 20px;
+  right: 30px;
+}
+
+#navMenu a {
+  padding-top: 2rem;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: medium;
+}
+
+#navMenu a:hover {
+  border-bottom: 2px solid #f4c20d;
+}
+
+/* === Hero Section === */
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  background-attachment: scroll;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0,) ,rgb(255,255,255,0.6));
+  z-index: 1;
+}
+
+.hero-divider svg {
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+
+/* === Info Strips === */
+.info-strips-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 8px;
+  padding-bottom:50px;
+  margin-top: -240px;
+  margin-bottom:+170px ;
+  position: relative;
+  z-index: 2;
+  max-width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  box-shadow: #0b0909;
+}
+
+.strip {
+  flex: 1;
+  height: 300px;
+  padding: 4rem 1rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.strip h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  padding-top: 0.1rem;
+
+}
+
+.strip p {
+  font-size: 1rem;
+  color: #444;
+ 
+}
+
+.white-bg {
+  background-color: #f4c20d;
+}
+
+.gray-bg {
+  background-color: #cccccc;
+}
+
+.yellow-bg {
+  background-color: #f4c20d;
+  color: #222;
+}
+
+
+.vision-block {
+  background:none;
+  max-width: 1400px;
+  margin: 4rem auto;
+  padding: 20px 0 ; /* Adjust left/right space */
+ 
+}
+
+.vision-block p {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  text-indent: 2rem;
+  font-weight:400;
+}
+
+
+/* === Features === */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 5rem;
+  padding: 4rem 2rem;
+  max-width: 80%;
+  margin: 0 auto;
+  background:none;
+}
+
+
+
+.feature {
+  background-color:#db520d ;
+  padding: 1rem;
+  border-color: #031010;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  flex: 1;
+}
+
+/* === Quote Form === */
+#quote {
+  background: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20rem;
+  padding-top: 10rem;
+}
+
+
+.quote-form {
+  width: 50%;
+  max-width: 500px;
+  max-height: 70vh;
+  overflow-y:auto;
+  margin: 3rem auto;
+  padding: 2rem ;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: rgb(197, 200, 199);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem; /* 👈 This replaces big margins between fields */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+
+.quote-form h2 {
+  background-color:#f4c20d;
+  color:#222;
+  padding: 1rem ;
+  margin: -2rem -2rem -2rem -2rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size:1.5rem ;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: block;
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 0.2rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.quote-form input,
+.quote-form select {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+.quote-form button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ffd700; /* Yellow tone to match your palette */
+  color: #031010;
+  cursor: pointer;
+  align-self: center; /* 👈 Centers the button */
+}
+
+
+.quote-form button:hover {
+  background-color: #e0b000;
+}
+
+
+
+/* === Contact Section === */
+#contact-home {
+  background:none;
+  padding: 2rem 2rem;
+  text-align: center;
+  padding-bottom: 0.1px;
+  padding-top: 2rem;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  background: none;
+}
+
+.whatsapp-button,
+.email-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s ease;
+  padding: 5px 20px;
+  
+}
+
+.whatsapp-button {
+  background-color: #4ecc7c;
+  width: 10rem;
+}
+
+.email-button {
+  background-color: #e1e4e7;
+  color: red;
+  width: 10rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #1cae53;
+}
+
+.email-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* === WhatsApp Floating Button === */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.whatsapp-float img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* === Footer === */
+footer {
+  background: #222;
+  color:white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .info-strips-horizontal {
+    flex-direction: column;
+    margin-top: 1rem;
+    max-width: 90%;
+  }
+
+  .features {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #navMenu {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+
+/* === Global Styles ===
+/*
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Header & Navigation === *//*
+header {
+  background: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start; /* Aligns everything to the left *//*
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.slogen {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.active {
+  border-bottom: 2px solid #f4c20d;
+}
+
+/* === Hero Section === *//*
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  padding-bottom: 100px; /* Makes space for overlapping blocks *//*
+}
+
+
+
+.hero-text {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  line-height: 1.6;
+  letter-spacing: 2px;
+  word-spacing: 8px; /* Adds space between letters }*/
+
+
+
+
+/* === Intro & Features === */
+/*section {
+  padding: 3rem 2rem;
+}*//*
+
+.vision-expanded {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  text-align: justify;
+  font-size: 1.6rem; /* Bigger than h3 *//*
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: #222;
+}
+
+.vision-expanded p {
+  margin-bottom: 2rem;
+  text-indent: 2rem;
+}
+
+.uproot
+.downroot{
+  padding: 10px 20px 6px;
+}
+
+.uprox{
+  padding: 0  10px;
+}
+
+
+
+/*.features {
+  display: flex;
+  justify-content: space-around;
+  background-color: #cccccc;
+  padding: 5vh;
+  gap: 1px;
+}*/
+  /*
+.features{
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10vh;
+  padding: 0;
+  margin-top: +70px;
+  margin-bottom: +70px; /* Pulls it up to overlap hero bottom *//*
+  position: relative;
+  z-index: 1;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.feature{
+  background-color: #b4abab;
+  padding: 2vh;
+}
+
+.feature {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.feature{
+  flex: 1;
+  height: +5px;
+  width: 33.33.33%;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+}
+
+/* === Quote Form === *//*
+  background-color: #f4f4f4;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quote-form h2 {
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+.quote-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.quote-form button {
+  background-color: #f4c20d;
+  color: #222;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-form button:hover {
+  background-color: #e0b000;
+}
+
+#formMessage {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* === Scroll Animation === *//*
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === Footer === *//*
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+
+ .menu-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+
+
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 0.5rem 0;
+  }
+
+
+  .whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #25D366;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.whatsapp-float img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+}
+
+.nav-menu li button {
+  background: none;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.nav-menu li button:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* === Horizontal Info Strips on Homepage === *//*
+.info-strips-horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap:0;
+  padding: 0;
+  margin-top: -170px; /* Pulls it up to overlap hero bottom *//*
+  position: relative;
+  z-index: 2;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.strip {
+  flex: 1;
+  height: 270px;
+  width: 33.33%;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.strip h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.strip p {
+  font-size: 1rem;
+  color: #444;
+}
+
+.white-bg {
+  background-color: #f4c20d;
+}
+
+.gray-bg {
+  background-color:#cccccc ;
+}
+
+.yellow-bg {
+  background-color: #f4c20d;
+  color: #222;
+}
+
+/* Responsive *//*
+@media (max-width: 768px) {
+  .info-strips-horizontal {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+} */
