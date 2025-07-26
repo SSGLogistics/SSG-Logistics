@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | SSG Logistics</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo-block">
+      <div class="logo-top"><span style="color: white;">SS</span><span style="color: yellow;">G</span></div>
+      <div class="logo-bottom"><span style="color: white;">L&nbsp;O&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;S</span></div>
+    </div>
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="ssgservice.html">Services</a>
+      <a href="ssggallery.html">Gallery</a>
+      <a href="ssgabout.html">About</a>
+      <a href="ssgcontact.html">Contact</a>
+    
+    </nav>
+  </header>
+
+  <section class="gallery-intro">
+    <h1>Our Gallery</h1>
+    <p>Explore our fleet, operations, and happy moments from deliveries across Goa and Pan India.</p>
+  </section>
+
+  <section class="gallery-grid">
+    <div class="gallery-item"><img src="images/mini-truck.jpg" alt="Mini Pickup" /><h3>Mini Pickup</h3></div>
+    <div class="gallery-item"><img src="images/bolero.jpg" alt="Bolero Fleet" /><h3>Bolero Loading</h3></div>
+    <div class="gallery-item"><img src="images/eicher.jpg" alt="Eicher Vehicle" /><h3>Eicher Delivery</h3></div>
+    <div class="gallery-item"><img src="images/goa-warehouse.jpg" alt="Warehouse" /><h3>SSG Warehouse</h3></div>
+    <div class="gallery-item"><img src="images/loading.jpg" alt="Staff Loading" /><h3>Our Staff at Work</h3></div>
+    <div class="gallery-item"><img src="images/client.jpg" alt="Client Delivery" /><h3>Client Delivery Moment</h3></div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 SSG Logistics. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:ssglogisticshub@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/919284244876" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Responsive menu
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

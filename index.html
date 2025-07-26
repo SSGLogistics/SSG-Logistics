@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSG Logistics</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+
+  <header>
+    <div class="logo-block">
+  <div class="logo-top"><span style="color: white;">SS</span><span style="color: #f4c20d;">G</span></div>
+  <div class="logo-bottom"><span style="color: white;">L&nbsp;O&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;S</span></div>
+</div>
+
+
+<button class="menu-toggle" id="menuToggle">&#9776;</button>
+<div class="nav-wrapper">
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="ssgservice.html">Services</a>
+    <!-- <a href="ssggallery.html">Gallery</a> -->
+    <a href="ssgabout.html">About</a>
+    <a href="ssgcontact.html">Contact</a>
+   
+  </nav>
+    <button class="quote-scroll-btn desktop-only" onclick="scrollToQuote()">Get Quote</button>
+
+  </div>
+</header>
+
+
+
+  <!-- Hero Section -->
+
+  <section class="hero"style="background-image: url('logistic theam.png.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;">
+  </section>
+
+  <div class="hero-divider">
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z" fill="#fef6d2"></path>
+  </svg>
+</div>
+
+
+
+<div class="bg-wrapper" 
+style="background: linear-gradient(to bottom, rgb(208, 169, 90)0%, rgba(255,255,255,0))100%, url('godown bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+">
+
+
+
+  <!-- Info Strips -->
+  <section class="info-strips-horizontal">
+    <div class="strip white-bg">
+      <h3>💰 Best Prices</h3>
+      <p>Transparent rates with no hidden fees.</p>
+    </div>
+    <div class="strip gray-bg">
+      <h3>📩 Get Free Quote</h3>
+      <p>Quick estimates for your next shipment.</p>
+    </div>
+    <div class="strip yellow-bg">
+      <h3>📞 24/7 Support</h3>
+      <p>Always available to assist your logistics needs.</p>
+    </div>
+  </section>
+
+  <!-- Vision Paragraph -->
+ <div class="vision-block">
+  <p>
+    At <strong>SSG Logistics</strong>, we believe logistics is more than movement — it’s momentum. Every delivery we make is a reflection of our values: precision, punctuality, and personal care. Whether it’s a single parcel or a full truckload, we treat every shipment with the same level of dedication. Our team is trained not just to transport, but to troubleshoot, communicate, and ensure peace of mind. We operate with transparency — no hidden fees, no last-minute surprises. From startups to enterprises, we tailor our services to fit your scale and speed. Our fleet is expanding, our routes are growing, and our commitment is unwavering. We’re not just a logistics provider — we’re a logistics partner. With real-time updates and WhatsApp booking, we bring convenience to your fingertips. Because at SSG, your business doesn’t just move — it moves forward. Efficiently. Reliably. Nationwide. That’s the SSG promise.
+  </p>
+</div>
+
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">✅ Reliable</div>
+    <div class="feature">🌐 Pan India</div>
+    <div class="feature">⚡ On time Delivery</div>
+  </section>
+
+  <!-- Quote Form -->
+  <section id="quote">
+    <form id="quoteForm" class="quote-form">
+      <h2>Get a Quote</h2>
+
+      
+
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
+
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" required />
+
+      <label for="pickup">Pickup Location</label>
+      <input type="text" name="pickup" required/>
+      <label for="drop">Drop Location</label>
+      <input type="text" name="drop" required />
+
+      <label for="vehicle">Select Vehicle</label>
+      
+<select name="vehicle" required>
+  <option value="">Select vehicle</option>
+  <option value="swiftlite">SwiftLite 750</option>
+  <option value="flexhaul">FlexHaul 7000</option>
+  <option value="titanmover">TitanMover 9000</option>
+  <option value="heavyhaul">HeavyHaul 9000+</option>
+</select>
+
+
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" required />
+
+
+      <button type="button" onclick="validateAndSend()">Get Quote</button>
+
+    </div>
+    </form>
+  </section>
+
+  <!-- - Contact Section
+  <section id="contact-home">
+    <h1>CONTACT US</h1>
+    <div class="contact-buttons">
+  <a href="https://wa.me/919284244876" target="_blank" class="whatsapp-button">
+    WhatsApp
+  </a>
+  <a href="mailto:ssglogisticshub@gmail.com" class="email-button">
+    Email
+  </a>
+</div>
+
+  </section> -->
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919284244876" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+  </a>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 SSG Logistics</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61574565826535" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ssg__logistics?utm_source=ig_web_button_share_sheet&igsh=djFzaWFybXhkaWN2" target="_blank"><i class="fab fa-instagram"></i></a>
+      <!-- <a href="https://www.linkedin.com/company/ssglogistics" target="_blank"><i class="fab fa-linkedin-in"></i></a> -->
+      <a href="https://wa.me/919284244876" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:ssglogisticshub@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+  </div>
+  </div>
+
+</body>
+</html>

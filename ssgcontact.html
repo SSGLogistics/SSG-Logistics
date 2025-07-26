@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo-block">
+    <div class="logo-top"><span>SS</span><span>G</span></div>
+    <div class="logo-bottom">L&nbsp;O&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;S</div>
+  </div>
+
+  <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+  <nav id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="ssgservice.html">Services</a>
+    <a href="ssgabout.html">About</a>
+    <a href="ssgcontact.html">Contact</a>
+  </nav>
+</header>
+
+
+<div class="contact-container">
+  <div class="contact-info">
+    <h1>CONTACT US</h1>
+    <h2>Address:</h2>
+    <p>🏢 Narayan Niwas, Mopa Pernem, North-Goa, 403512</p>
+
+    <h2>Let's Talk:</h2>
+    <p><a href="tel:+919284244876">📞 +91-9284244876</a></p>
+
+    <h2>General Support:</h2>
+    <p><a href="mailto:ssglogisticshub@gmail.com">📩 ssglogisticshub@gmail.com</a></p>
+  </div>
+
+  <div class="form-wrapper">
+    <div class="contact-form">
+      <form id="contactForm">
+        <h1>Drop your message</h1>
+
+       <!-- Full Name Fields -->
+<div class="form-group full-name">
+  <label for="fullname">Full Name</label>
+  <div class="name-fields">
+    <input type="text" id="firstName" placeholder="First Name" required pattern="[A-Za-z\s]+" />
+    <input type="text" id="lastName" placeholder="Last Name" required pattern="[A-Za-z\s]+" />
+  </div>
+</div>
+
+<!-- Email -->
+<label for="email">Enter Your Email</label> 
+<input type="email" id="email" placeholder="Eg. support@example.com" required />
+
+<!-- Phone -->
+<label for="phone">Enter Phone Number</label>
+<input type="tel" id="phone" placeholder="Eg. +91 9876543210" required pattern="^\+91\d{10}$" />
+
+<!-- Message -->
+<label for="message">Message</label>
+<textarea id="message" placeholder="Write us a message" required></textarea>
+
+<!-- Button -->
+<button type="button" onclick="validateAndSend()">Send Message</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 SSG Logistics</p>
+</footer>
+
+<script src="contact.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    toggleButton.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  });
+</script>
+
+
+</body>
+</html>
