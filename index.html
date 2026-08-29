@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSG Logistics | Statewide Goa & Pan-India Freight Network</title>
+  
+  <meta name="description" content="Official logistics partner across all Goa industrial estates and Pan-India routes. Transparent per-km rates, flexible monthly fleet subscriptions, and instant WhatsApp booking." />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient Glow -->
+  <div class="mesh-glow"></div>
+
+  <!-- Live Telemetry Stream -->
+  <div class="telemetry-bar">
+    <div class="telemetry-track">
+      <span>🟢 ACTIVE CORRIDOR: VERNA INDUSTRIAL ↔ KUNDAIM</span>
+      <span>⚡ THIVIM ↔ MAPUSA EXPRESS DISPATCH</span>
+      <span>📦 PAN-GOA TO PAN-INDIA HIGHWAY NETWORK: CONNECTED</span>
+      <span>🛡️ TRANSPARENT TARIFF: NO HIDDEN FEES</span>
+      <span>🟢 ACTIVE CORRIDOR: VERNA INDUSTRIAL ↔ KUNDAIM</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="navbar">
+    <a href="index.html" class="logo-block">
+  <div class="logo-top"><span>SS</span><span class="gold-accent">G</span></div>
+  <div class="logo-bottom">L&nbsp;O&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;S</div>
+</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars-staggered"></i>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <a href="#rates" class="nav-link">Rates &amp; Plans</a>
+      <a href="#calculator" class="nav-link">Payload Tool</a>
+      <a href="#corridors" class="nav-link">Industrial Hubs</a>
+      <a href="#about" class="nav-link">About SSG</a>
+      <a href="#contact" class="nav-link">Contact Hub</a>
+      <a href="#quote" class="btn-nav"><i class="fa-solid fa-bolt"></i> Get Instant Quote</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-badge"><i class="fa-solid fa-truck-fast"></i> Reliable Fleet • Goa-Wide &amp; Nationwide</div>
+    <h1 class="hero-title">Every Route in Goa, <br><span class="text-gradient">Every Mile Pan-India.</span></h1>
+    <p class="hero-subtitle">
+      Connecting industrial hubs, commercial centers, and intercity routes with dedicated pickup trucks, structured monthly subscriptions, and upfront pricing.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#quote" class="btn-primary"><i class="fa-solid fa-calculator"></i> Calculate Trip Rate</a>
+      <a href="#rates" class="btn-secondary"><i class="fa-solid fa-file-invoice-dollar"></i> View Rate Card</a>
+    </div>
+
+    <!-- Live Animated Freight Highway with Looping Hubs -->
+    <div class="highway-container">
+      <div class="highway-road">
+        <div class="road-lines"></div>
+        <div class="hub-marker hub-left" id="hubStart"><i class="fa-solid fa-location-dot"></i> Verna Estate</div>
+        <div class="hub-marker hub-mid" id="hubMid"><i class="fa-solid fa-industry"></i> Kundaim Hub</div>
+        <div class="hub-marker hub-right" id="hubEnd"><i class="fa-solid fa-city"></i> Pan-India Line</div>
+
+        <!-- Animated Cyber Truck -->
+        <div class="cyber-truck" id="movingTruck">
+          <div class="truck-body">
+            <div class="truck-cargo"><span>SSG</span></div>
+            <div class="truck-cab"></div>
+            <div class="truck-light"></div>
+            <div class="wheel wheel-front"></div>
+            <div class="wheel wheel-mid"></div>
+            <div class="wheel wheel-back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Metrics Grid -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-target="100">0%</div>
+        <div class="stat-label">Pan-Goa Coverage</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="15000">0+</div>
+        <div class="stat-label">Tons Transported</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="99.8">0%</div>
+        <div class="stat-label">Punctual Dispatch</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-target="24">0/7</div>
+        <div class="stat-label">Direct WhatsApp Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Official Rate Card & Pricing Structure -->
+  <section class="section-container" id="rates">
+    <div class="section-header">
+      <span class="section-tag">TRANSPARENT TARIFF</span>
+      <h2>Official Rate Card &amp; Plans</h2>
+      <p>Clear, fixed pricing for single deliveries, dedicated monthly contracts, and bulk corporate fleets[cite: 1].</p>
+    </div>
+
+    <!-- Tab Switchers -->
+    <div class="rate-tabs">
+      <button class="tab-btn active" onclick="switchRateTab('trip-tab')">Per-Trip Distance Rates</button>
+      <button class="tab-btn" onclick="switchRateTab('sub-tab')">Monthly Subscriptions</button>
+      <button class="tab-btn" onclick="switchRateTab('bulk-tab')">Bulk Dedicated Fleet</button>
+    </div>
+
+    <!-- 1. Per-Trip Table View -->
+    <div class="rate-content active" id="trip-tab">
+      <div class="table-grid">
+        <!-- 1 Ton Card -->
+        <div class="rate-table-card">
+          <div class="table-header">
+            <h3>Tata Ace <span class="vehicle-sub">(1.0 Ton Capacity)</span>[cite: 1]</h3>
+            <span class="badge-mini">City &amp; Quick Runs</span>
+          </div>
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Distance Range</th>
+                <th>Standard Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>00 – 05 km</td><td><strong>₹300/-</strong>[cite: 1]</td></tr>
+              <tr><td>05 – 10 km</td><td><strong>₹400/-</strong>[cite: 1]</td></tr>
+              <tr><td>10 – 20 km</td><td><strong>₹600/-</strong>[cite: 1]</td></tr>
+              <tr><td>20 – 30 km</td><td><strong>₹800/-</strong>[cite: 1]</td></tr>
+              <tr><td>Above 30 km</td><td><strong>₹25 / km</strong>[cite: 1]</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 1.5 Ton Card -->
+        <div class="rate-table-card">
+          <div class="table-header">
+            <h3>Ashok Leyland Dost LS <span class="vehicle-sub">(1.5 Ton Capacity)</span>[cite: 1]</h3>
+            <span class="badge-mini gold">Heavy Industrial</span>
+          </div>
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Distance Range</th>
+                <th>Standard Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>00 – 05 km</td><td><strong>₹400/-</strong>[cite: 1]</td></tr>
+              <tr><td>05 – 10 km</td><td><strong>₹600/-</strong>[cite: 1]</td></tr>
+              <tr><td>10 – 20 km</td><td><strong>₹800/-</strong>[cite: 1]</td></tr>
+              <tr><td>20 – 30 km</td><td><strong>₹1,000/-</strong>[cite: 1]</td></tr>
+              <tr><td>Above 30 km</td><td><strong>₹30 / km</strong>[cite: 1]</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Subscription Plans View -->
+    <div class="rate-content" id="sub-tab">
+      <div class="plans-grid">
+        <!-- Basic Plan -->
+        <div class="plan-card">
+          <span class="plan-type">Basic Plan[cite: 1]</span>
+          <h3>10 Deliveries / 100 KM[cite: 1]</h3>
+          <p class="plan-sub">Ideal for regular local supply replenishment[cite: 1].</p>
+          <div class="plan-pricing-box">
+            <div><span>1 Ton (Tata Ace):</span> <strong>₹3,500 / mo</strong>[cite: 1]</div>
+            <div><span>1.5 Ton (Dost LS):</span> <strong>₹5,000 / mo</strong>[cite: 1]</div>
+          </div>
+          <p class="note-text">*Extra KM: ₹10/km (1 Ton) | ₹20/km (1.5 Ton). Extra trip: ₹500/trip[cite: 1].</p>
+          <a href="#quote" class="btn-secondary btn-block">Inquire Basic</a>
+        </div>
+
+        <!-- Standard Plan -->
+        <div class="plan-card featured-plan">
+          <span class="plan-type gold">Most Popular[cite: 1]</span>
+          <h3>20 Deliveries / 200 KM[cite: 1]</h3>
+          <p class="plan-sub">Designed for steady B2B trade &amp; commerce[cite: 1].</p>
+          <div class="plan-pricing-box">
+            <div><span>1 Ton (Tata Ace):</span> <strong>₹6,500 / mo</strong>[cite: 1]</div>
+            <div><span>1.5 Ton (Dost LS):</span> <strong>₹9,500 / mo</strong>[cite: 1]</div>
+          </div>
+          <p class="note-text">*10% discount on 6-month contract renewals[cite: 1].</p>
+          <a href="#quote" class="btn-primary btn-block">Inquire Standard</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan-card">
+          <span class="plan-type">Premium Plan[cite: 1]</span>
+          <h3>30 Deliveries / 450 KM[cite: 1]</h3>
+          <p class="plan-sub">High-volume daily distribution across all zones[cite: 1].</p>
+          <div class="plan-pricing-box">
+            <div><span>1 Ton (Tata Ace):</span> <strong>₹9,000 / mo</strong>[cite: 1]</div>
+            <div><span>1.5 Ton (Dost LS):</span> <strong>₹14,000 / mo</strong>[cite: 1]</div>
+          </div>
+          <p class="note-text">*Extra KM: ₹10/km (1 Ton) | ₹20/km (1.5 Ton)[cite: 1].</p>
+          <a href="#quote" class="btn-secondary btn-block">Inquire Premium</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Bulk & Loyalty Contracts -->
+    <div class="rate-content" id="bulk-tab">
+      <div class="table-grid">
+        <div class="rate-table-card">
+          <div class="table-header">
+            <h3>Enterprise Monthly Bulk Packages[cite: 1]</h3>
+            <span class="badge-mini">Dedicated Logistics[cite: 1]</span>
+          </div>
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Vehicle Model</th>
+                <th>Deliveries Included</th>
+                <th>Monthly Rate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Tata Ace (1 Ton)[cite: 1]</td><td>20 Trips / Month[cite: 1]</td><td><strong>₹50,000/-</strong>[cite: 1]</td></tr>
+              <tr><td>Ashok Leyland Dost (1.5 Ton)[cite: 1]</td><td>20 Trips / Month[cite: 1]</td><td><strong>₹60,000/-</strong>[cite: 1]</td></tr>
+              <tr><td>Custom Dual Fleet (Both)[cite: 1]</td><td>30 Trips / Month[cite: 1]</td><td><strong>₹85,000/-</strong>[cite: 1]</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Loyalty Discounts Box -->
+        <div class="rate-table-card loyalty-box">
+          <div class="table-header">
+            <h3>Client Loyalty Retainer Discounts[cite: 1]</h3>
+            <span class="badge-mini gold">Guaranteed Savings[cite: 1]</span>
+          </div>
+          <ul class="loyalty-list">
+            <li><i class="fa-solid fa-certificate"></i> <strong>5% OFF</strong> on 3-Month Retainer Contracts[cite: 1]</li>
+            <li><i class="fa-solid fa-certificate"></i> <strong>10% OFF</strong> on 6-Month Retainer Contracts[cite: 1]</li>
+            <li><i class="fa-solid fa-certificate"></i> <strong>18% OFF</strong> on 12-Month Annual Contracts[cite: 1]</li>
+          </ul>
+          <p class="note-text">Priority vehicle lock-in, dedicated drivers, and flexible cargo scheduling[cite: 1].</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Dynamic Payload Tool -->
+  <section class="section-container" id="calculator">
+    <div class="section-header">
+      <span class="section-tag">SIMULATOR</span>
+      <h2>Interactive Payload Tool</h2>
+      <p>Drag the slider to find the recommended vehicle setup for your load.</p>
+    </div>
+
+    <div class="calculator-card">
+      <div class="slider-wrapper">
+        <div class="slider-labels">
+          <span>Consignment Weight:</span>
+          <strong id="weight-display">1,000 KG</strong>
+        </div>
+        <input type="range" id="weight-slider" min="300" max="8000" step="100" value="1000" class="custom-range" />
+      </div>
+
+      <div class="fleet-result-card">
+        <div class="fleet-info">
+          <div class="fleet-tag" id="vehicle-type-tag">Recommended Vehicle</div>
+          <h3 id="vehicle-name">Tata Ace (1 Ton)[cite: 1]</h3>
+          <p id="vehicle-desc">Best for agile commercial transport, city drops, and small industrial crates[cite: 1].</p>
+          
+          <div class="fleet-specs-grid">
+            <div class="spec-item">
+              <span class="spec-label">Payload Capacity</span>
+              <strong id="vehicle-cap" class="spec-val">Up to 1,000 KG</strong>[cite: 1]
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Base Starting Rate</span>
+              <strong id="vehicle-rate" class="spec-val">₹300 (0–5 km)</strong>[cite: 1]
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Service Reach</span>
+              <strong class="spec-val">All Goa &amp; Intercity</strong>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-primary" onclick="scrollToQuote()">
+          <i class="fa-solid fa-check"></i> Book This Fleet
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goa Industrial Corridors Grid -->
+  <section class="section-container" id="corridors">
+    <div class="section-header">
+      <span class="section-tag">STATEWIDE HUBS</span>
+      <h2>Goa Industrial Estate Network</h2>
+      <p>Daily arterial freight connectivity across all major industrial estates and intercity highways.</p>
+    </div>
+
+    <div class="corridor-grid">
+      <div class="corridor-card">
+        <div class="corridor-icon"><i class="fa-solid fa-industry"></i></div>
+        <h3>Verna &amp; Kundaim Corridors</h3>
+        <p>Heavy commercial freight &amp; daily scheduled routes for manufacturing, pharma, and engineering hubs.</p>
+        <span class="corridor-tag">Primary Arterial</span>
+      </div>
+
+      <div class="corridor-card">
+        <div class="corridor-icon"><i class="fa-solid fa-boxes-packing"></i></div>
+        <h3>Thivim, Pilerne &amp; Corlim</h3>
+        <p>Reliable cargo transport, raw material supply, and fast inter-estate transshipment.</p>
+        <span class="corridor-tag">Industrial Line</span>
+      </div>
+
+      <div class="corridor-card">
+        <div class="corridor-icon"><i class="fa-solid fa-warehouse"></i></div>
+        <h3>Bicholim, Sancoale &amp; Shiroda</h3>
+        <p>Dedicated pickups and drops for local fabrication units, food processing, and warehouse hubs.</p>
+        <span class="corridor-tag">Regional Route</span>
+      </div>
+
+      <div class="corridor-card">
+        <div class="corridor-icon"><i class="fa-solid fa-route"></i></div>
+        <h3>Pan-India Long Haul</h3>
+        <p>Interstate cargo transit connecting Goa directly to Maharashtra, Karnataka, and nationwide destinations.</p>
+        <span class="corridor-tag">National Highway</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Quote Section -->
+  <section class="section-container" id="quote">
+    <div class="quote-wrapper">
+      <div class="quote-info">
+        <span class="section-tag">DIRECT DISPATCH</span>
+        <h2>Get an Instant Trip Quote</h2>
+        <p>Fill in your route details. Your quote request is structured and sent directly to our WhatsApp operations desk.</p>
+        
+        <!-- Contact Block Box -->
+        <div class="info-block-box">
+          <div class="contact-pill"><i class="fa-solid fa-phone"></i> +91 9284244876</div>
+          <div class="contact-pill"><i class="fa-solid fa-envelope"></i> ssglogisticshub@gmail.com</div>
+          <div class="contact-pill"><i class="fa-solid fa-location-dot"></i> Statewide Operations, Goa, India</div>
+        </div>
+      </div>
+
+      <form id="ssgQuoteForm" class="quote-form-card">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name / Company</label>
+            <input type="text" id="name" placeholder="E.g. Rohit Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (+91)</label>
+            <input type="tel" id="phone" placeholder="+91 9876543210" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickup">Pickup Location (Anywhere in Goa)</label>
+            <input type="text" id="pickup" placeholder="E.g. Verna Industrial Estate" required />
+          </div>
+          <div class="form-group">
+            <label for="drop">Drop Destination</label>
+            <input type="text" id="drop" placeholder="E.g. Panjim / Pune / Hubli" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="vehicleSelect">Vehicle Requirement</label>
+            <select id="vehicleSelect" required>
+              <option value="Tata Ace (1 Ton)[cite: 1]" selected>Tata Ace (1 Ton Capacity)[cite: 1]</option>
+              <option value="Ashok Leyland Dost LS (1.5 Ton)[cite: 1]">Ashok Leyland Dost LS (1.5 Ton)[cite: 1]</option>
+              <option value="Custom Fleet / Bulk Contract[cite: 1]">Custom Fleet / Monthly Contract[cite: 1]</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="shipDate">Shipment Date</label>
+            <input type="date" id="shipDate" required />
+          </div>
+        </div>
+
+        <button type="submit" id="dispatchBtn" class="btn-primary btn-block">
+          <span class="btn-text"><i class="fa-brands fa-whatsapp"></i> Dispatch Rate Request</span>
+          <div class="btn-truck-anim"><i class="fa-solid fa-truck-fast"></i></div>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section-container" id="about">
+    <div class="about-card">
+      <span class="section-tag">THE SSG PROMISE</span>
+      <h2>Logistics Built on Precision &amp; Transparency</h2>
+      <p>
+        At <strong>SSG Logistics</strong>, we believe logistics is more than movement — it's momentum. From small business parcels to heavy industrial factory freight, we operate across every taluka in Goa and link smoothly to interstate corridors. No hidden fees, no last-minute rate surprises—just dependable, punctual transport.
+      </p>
+    </div>
+  </section>
+
+  <!-- Modern Contact Hub Section -->
+  <section class="section-container" id="contact">
+    <div class="section-header">
+      <span class="section-tag">COMMUNICATION</span>
+      <h2>Direct Contact Hub</h2>
+    </div>
+
+    <div class="contact-box-grid">
+      <div class="contact-card-box">
+        <div class="box-icon"><i class="fa-solid fa-headset"></i></div>
+        <h4>24/7 Operations Desk</h4>
+        <p>Instant booking support &amp; route assistance.</p>
+        <a href="tel:+919284244876" class="box-link">+91 9284244876</a>
+      </div>
+
+      <div class="contact-card-box">
+        <div class="box-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+        <h4>Corporate Inquiries</h4>
+        <p>Monthly billing and contract proposals.</p>
+        <a href="mailto:ssglogisticshub@gmail.com" class="box-link">ssglogisticshub@gmail.com</a>
+      </div>
+
+      <div class="contact-card-box">
+        <div class="box-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+        <h4>Statewide Presence</h4>
+        <p>Operating across North &amp; South Goa to Pan-India.</p>
+        <span class="box-link">Goa, India</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-block footer-logo-block">
+        <div class="logo-top"><span>SS</span><span class="gold-accent">G</span></div>
+        <div class="logo-bottom">L&nbsp;O&nbsp;G&nbsp;I&nbsp;S&nbsp;T&nbsp;I&nbsp;C&nbsp;S</div>
+      </div>
+        <p class="footer-desc">Professional freight transport, industrial cargo distribution, and monthly dedicated fleet solutions across Goa and Pan-India.</p>
+      </div>
+      <div>
+        <h4>Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#rates">Rate Card &amp; Subscriptions</a></li>
+          <li><a href="#calculator">Payload Simulator</a></li>
+          <li><a href="#corridors">Industrial Corridors</a></li>
+          <li><a href="#quote">Instant Rate Quote</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect With Us</h4>
+        <div class="social-row">
+          <a href="https://wa.me/919284244876" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/ssg__logistics" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:ssglogisticshub@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SSG Logistics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919284244876" class="floating-whatsapp" target="_blank" aria-label="Direct WhatsApp Dispatch">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
